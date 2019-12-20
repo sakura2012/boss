@@ -1,7 +1,7 @@
 {
   "name": "boss",
   "version": "0.1.0",
-  "homepage": "http://ydjw.github.io/jwc",
+  "homepage": "https://sakura2012.github.io/test/",
   "predeploy": "npm run build",
   "deploy": "gh-pages -d build",
   "private": true,
@@ -19,6 +19,7 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
+    "dev": "webpack-dev-server --inline --progress --config build/webpack.dev.conf.js",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
