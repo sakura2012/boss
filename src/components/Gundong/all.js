@@ -26,11 +26,7 @@ class Index extends Component {
             <div className="newPosition">
                 <div className="newPosition-content">
                     <div className="newPosition-list">
-                    <div className="more-positon">
-				        最新职位
-				        <a className="clickMorePosition">更多</a>
-			        </div>
-                        <Page data={this.state.list_data}></Page>
+                        <Page data={this.state.list_data} title='最新职位'></Page>
                     </div>
                     <div className="newPosition-img">
                             <a href="" className="first">

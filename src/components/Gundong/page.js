@@ -10,7 +10,8 @@ class Index extends Component {
     }
     static getDerivedStateFromProps(props, state){
         return {
-            data:props.data
+            data:props.data,
+            title:props.title
         }
     }
     gun(){
@@ -39,6 +40,12 @@ class Index extends Component {
     render() { 
         return ( 
             <div className="page-mean">
+                <div className="demo1">
+                <div className="more-positon">
+				        {this.state.title}
+				        <a className="clickMorePosition">更多</a>
+			    </div>
+                </div>
                 <div ref='demo' className="demo" onMouseOut={this.gun.bind(this)} id="demo" onMouseOver={this.gun2.bind(this)}>
                 <ul ref='demo1' id="demo1">
                     {this.state.data?this.state.data.map(item=>{
